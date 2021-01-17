@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.example.riskpredictor"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <application
+        android:theme="@ref/0x7f0c0005"
+        android:label="@ref/0x7f0b0027"
+        android:icon="@ref/0x7f0a0000"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@ref/0x7f0a0002"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:label="@ref/0x7f0b002a"
+            android:name="com.example.riskpredictor.ShowCancerRisk"
+            android:parentActivityName="com.example.riskpredictor.CancerRiskLevel" />
+
+        <activity
+            android:label="@ref/0x7f0b0029"
+            android:name="com.example.riskpredictor.CancerRiskLevel"
+            android:parentActivityName="com.example.riskpredictor.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f0b002f"
+            android:name="com.example.riskpredictor.FemaleRiskLevel"
+            android:parentActivityName="com.example.riskpredictor.FemaleStressData" />
+
+        <activity
+            android:label="@ref/0x7f0b002e"
+            android:name="com.example.riskpredictor.FemaleStressData"
+            android:parentActivityName="com.example.riskpredictor.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f0b002f"
+            android:name="com.example.riskpredictor.MaleRiskLevel"
+            android:parentActivityName="com.example.riskpredictor.MaleStressData" />
+
+        <activity
+            android:label="@ref/0x7f0b002e"
+            android:name="com.example.riskpredictor.MaleStressData"
+            android:parentActivityName="com.example.riskpredictor.MainActivity" />
+
+        <activity
+            android:name="com.example.riskpredictor.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
